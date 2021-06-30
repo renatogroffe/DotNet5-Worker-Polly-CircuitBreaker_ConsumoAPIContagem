@@ -37,11 +37,11 @@ namespace APIContagem.Controllers
                 throw new Exception("Simulação de falha!");
             }
 
-            _logger.LogInformation($"Contador - Valor atual: {_CONTADOR.ValorAtual}");
+            _logger.LogInformation($"Contador - Valor atual: {valorAtualContador}");
 
             return new()
             {
-                ValorAtual = _CONTADOR.ValorAtual,
+                ValorAtual = valorAtualContador,
                 Local = _CONTADOR.Local,
                 Kernel = _CONTADOR.Kernel,
                 TargetFramework = _CONTADOR.TargetFramework,
